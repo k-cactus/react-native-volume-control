@@ -15,7 +15,9 @@ Pod::Spec.new do |s|
   s.platform            = :ios, "7.0"
   s.preserve_paths      = "**/*.js"
 
+  s.dependency 'React'
+
   s.subspec 'Main' do |ss|
-    ss.source_files     = "ios/RNVolumeControl.{h,m}"
+    ss.source_files     = "ios/RNVolumeControl/RNVolumeControl.{h,m}"
   end
 end
